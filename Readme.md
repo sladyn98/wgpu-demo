@@ -1,46 +1,41 @@
-This is a Python script that demonstrates an image zoom and pan functionality using the pygfx and wgpu libraries. It allows you to load an image and interactively zoom and pan within the image using the mouse wheel and mouse drag.
+# WebDiffusion
 
+Create images in your browser with Stable Diffusion - secure, free, and no installation required.
 
-### Requirements
-Python 3.7 or higher
-imageio library (pip install imageio)
-pygfx library (pip install pygfx)
-wgpu library (pip install wgpu)
-Usage
-Clone or download this repository to your local machine.
+Please ensure you have a GPU with 8GB VRAM (or an M1/M2 Mac), and Chrome or Edge version 113 or higher.
 
-Open a terminal or command prompt and navigate to the project directory.
+WebDiffusion is a modified version of (mlc-ai/web-stable-diffusion)[https://github.com/mlc-ai/web-stable-diffusion] that comes with all the required files. You don't need to install Python, any pip dependencies, or execute build commands. We have eliminated unnecessary code, providing a straightforward and convenient experience.
 
-Make sure you have the required dependencies installed (see "Requirements" section).
+## Table of Contents
 
-Run the following command to execute the script:
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-```shell
-python image_zoom_pan_demo.py
-```
+## Introduction
 
-The script will launch a GUI window displaying a white canvas.
+WebDiffusion is a web application that allows you to generate images in your browser using Stable Diffusion. It provides a user-friendly interface where you can input prompts and generate corresponding images without the need for any local installation. The application leverages the power of GPUs with 8GB VRAM or M1/M2 Macs for optimal performance.
 
-* Drag and drop an image file (e.g., memory_base.png) onto the canvas.
+## Installation
 
-* Use the mouse wheel to zoom in and out of the image.
+No installation is required for WebDiffusion. Simply open the web application in a modern browser such as Chrome or Edge version 113 or higher.
 
-* Click and drag the mouse to pan across the image.
+## Usage
 
-### Further Improvements
-* Image Preloading: Add support for preloading multiple images and selecting them interactively.
+1. Open the WebDiffusion application in your browser.
+2. Ensure that you have a GPU with 8GB VRAM or an M1/M2 Mac.
+3. Enter your desired input prompt in the "Input Prompt" text area. For example, you can enter "Art nouveau stained glass hummingbird".
+4. Optionally, you can provide a negative prompt in the "Negative Prompt" text area.
+5. Click on the "Generate" button to initiate the image generation process.
+6. The generated image will be displayed in the canvas area on the right side of the screen.
+7. You can download the generated image by clicking on the canvas and selecting the "Save Image As" option.
 
-* Keyboard Controls: Implement keyboard shortcuts to control zooming and panning.
+## Contributing
 
-* Limit Zoom Levels: Set minimum and maximum zoom levels to restrict the zoom range.
+We welcome contributions to improve WebDiffusion. If you encounter any issues or have suggestions for new features, please feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/your-username/web-diffusion).
 
-* Smooth Transitions: Add smooth animation transitions for zooming and panning movements.
+## License
 
-* Image Scaling: Allow the image to scale automatically to fit the canvas size.
-
-* User Interface: Create a simple UI panel to display image information and control options.
-
-* Error Handling: Implement error handling for cases such as invalid image file format or loading failures.
-
-* Performance Optimization: Optimize rendering and interaction performance for large images or complex scenes.
-
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
