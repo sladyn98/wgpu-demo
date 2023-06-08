@@ -12,9 +12,6 @@ class TVMPNDMScheduler {
     this.currSample = undefined;
     this.tvm = tvm;
 
-    // prebuild constants
-    // principle: always detach for class members
-    // to avoid recycling output scope.
     function loadConsts(output, dtype, input) {
       for (let t = 0; t < input.length; ++t) {
         output.push(
@@ -117,9 +114,7 @@ class TVMDPMSolverMultistepScheduler {
     this.stepFunc = undefined;
     this.tvm = tvm;
 
-    // prebuild constants
-    // principle: always detach for class members
-    // to avoid recycling output scope.
+  
     function loadConsts(output, dtype, input) {
       for (let t = 0; t < input.length; ++t) {
         output.push(
